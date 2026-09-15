@@ -67,7 +67,7 @@ Run the application:
 python main.py
 ```
 
-In `sqlserver` mode, the application executes the queries defined in `sql_queries.py`. Some DMV queries usually require this permission:
+In `sqlserver` mode, the application loads and executes the T-SQL files from the `queries/` directory through `sql_queries.py`. Keeping SQL separate from Python improves readability, editor support, and maintainability. Some DMV queries usually require this permission:
 
 ```sql
 GRANT VIEW SERVER STATE TO [your_user];
